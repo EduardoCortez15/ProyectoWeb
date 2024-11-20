@@ -1,0 +1,298 @@
+/**
+definir variables globales
+**/
+:root{
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+/*seleccion de todos los elementos de la pagina "*" **/
+*{
+    margin:0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+/*seleccion elementos solo de contenedor**/
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+
+}
+
+/***selecciona elementos del contenedor dentro del header**/
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 40px;
+}
+
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*cambio de color cuando le paso el mouse y cuando lo pongo click**/
+header nav a:hover,header nav a.activo{
+    color: #fff;
+}
+
+/*fonde de cineplanet**/
+.pelicula-principal{
+    font-size: 16px;
+    min-height: 40.62em;/*altura minima segun el padre**/
+    color: #fff;
+
+    /*degradado color negro con opacidad del 50%**/
+    background: linear-gradient(rgba(0, 0, 0,.50) 0%,rgba(0,0,0,.50) 100%), url(../imagenesCortez/cineplanet3.avif);
+
+    background-position: center center;/*parte central en el centro del elemento**/
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: center;/*elementos hijos del contenedor al medio**/
+}
+
+.pelicula-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo{
+    font-weight: 600;/*grosor de la fuente*/
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom:1.25em;
+}
+
+.pelicula-principal .boton{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em ;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover{
+    background:#fff;
+    color: #000;
+}
+
+.pelicula-principal .boton i{
+    margin-right: 1.25em;
+
+}
+
+.contenedor-titulo-controles{
+    display: flex;/*alinea los elementos hijo y los hace mas flexibles**/
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo-controles h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button{
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    border: none;
+    margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover ,.contenedor-titulo-controles .indicadores button.activo{
+    background: red;
+}
+
+.peliculas-recomendadas{
+    margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal{
+     display: flex;
+     align-items: center;
+     position: relative;/*lo mantiene en su lugar**/
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background:rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: 500;
+    transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover{
+
+    background: rgba(0, 0, 0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+
+.peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+min-width: 20%;
+transition: .3s ease all;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover{
+transform: scale(1.2);
+transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+    width: 100%;
+    vertical-align: top;
+    }
+
+/***---------pie de pagina-----------------------*/
+footer {
+    background-color: #141414; 
+    color: #fff; 
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .important-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .important-info h2 {
+    color: #e50914; 
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .important-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .footer-columns {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h2 {
+    font-size: 18px;
+    color: #e50914; 
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #b3b3b3; 
+  }
+  
+  .footer-section ul li:hover {
+    color: #fff; 
+    cursor: pointer;
+  }
+  
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .footer-black p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .footer-black ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .footer-black ul li a {
+    text-decoration: none;
+    color: #e50914; 
+    font-size: 18px;
+  }
+  
+  .footer-black ul li a:hover {
+    color: #fff;
+  }
+  
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-top: 10px;
+  }

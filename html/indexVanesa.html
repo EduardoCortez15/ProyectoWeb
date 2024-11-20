@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELICULAS</title>
+    <link href="../css/estilosVanesa.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">Cineplanet</h2>
+            <nav>
+                <a href="indexCortez.html">Inicio</a>
+                <a href="#" class="activo">Peliculas</a>
+                <a href="indexKevin.html">Cines</a>
+                <a href="indexYadhi.html">Promociones</a>
+                <a href="indexLogin.html">Iniciar Sesion</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="encabezado">
+        <h1>PELICULAS</h1>
+    </div>
+    <div class="busqueda">
+        <input type="text" placeholder="Buscar pelicula..." class="input-busqueda">
+        <button class="boton">Buscar</button>
+    </div>
+
+    <!-- Botones para filtrar por género -->
+    <button class="filtro" onclick="filtrarGenero('terror')">Terror</button>
+    <button class="filtro" onclick="filtrarGenero('comedia')">Comedia</button>
+    <button class="filtro" onclick="filtrarGenero('suspenso')">Suspenso</button>
+    <button class="filtro" onclick="filtrarGenero('drama')">Drama</button>
+    <button class="filtro" onclick="filtrarGenero('accion')">Acción</button>
+    <button class="filtro" onclick="filtrarGenero('romantica')">Romántica</button>
+    <button class="filtro" onclick="filtrarGenero('Ficcion')">Ficción</button>
+    <button class="filtro" onclick="filtrarGenero('Infantil')">Infantil</button>
+    <button class="filtro" onclick="mostrarTodas()">Mostrar Todas</button>
+
+    <div class="peliculas" id="lista_peliculas">
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/1.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>IRON MAN 3</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/11.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>SPIDER-MAN</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/21.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>BOHEMIAN RHAPSODY</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/2.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>THOR</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Ficcion">
+            <img src="../imagenes/3.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>THOR RAGNAROK</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="terror">
+            <img src="../imagenes/4.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>RESIDENT EVIL</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/5.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>LA VIEJA GUARDIA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/6.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>SPECTRAL</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/7.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>ABRAZAD LA GUERRA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Ficcion">
+            <img src="../imagenes/8.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>PROJECT POWER</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="terror">
+            <img src="../imagenes/inmaculada.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>INMACULADA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/alien.jpeg" alt="Póster de Película 1">
+            <div>
+                <h2>ALIEN</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/apocalipsis.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>APOCALIPSIS</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Ficcion">
+            <img src="../imagenes/avatar.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>AVATAR</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/bad boy.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>BAD BOY</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="comedia">
+            <img src="../imagenes/beet.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>BEETLEJUICE</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/bob.png" alt="Póster de Película 1">
+            <div>
+                <h2>BOB ESPONJA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="romantica">
+            <img src="../imagenes/challengers.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>CHALLENGERS</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/deadpool.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>DEAD POOL</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/durante la tormenta.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>DURANTE LA TORMENTA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="terror">
+            <img src="../imagenes/el cuervo.png" alt="Póster de Película 1">
+            <div>
+                <h2>EL CUERVO</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/Elemental.jpeg" alt="Póster de Película 1">
+            <div>
+                <h2>ELEMENTAL</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/garfield.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>GARFIELD</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="terror">
+            <img src="../imagenes/header.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>HEADER</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/intensamente.jfif" alt="Póster de Película 1">
+            <div>
+                <h2>INTENSAMENTE</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/iron claw.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>THE IRON CLAW</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/jhon wick.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>JHON WICK</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Ficcion">
+            <img src="../imagenes/joker.png" alt="Póster de Película 1">
+            <div>
+                <h2>JOKER</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/kraven.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>KRAVEN</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/luca.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>LUCA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/madame web.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>MADAME WEB</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/megan.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>MEGAN</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="terror">
+            <img src="../imagenes/no hables con extraños.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>NO HABLES CON EXTRAÑOS</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="terror">
+            <img src="../imagenes/prodigy.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>PRODIGY</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/rampage.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>RAMPAGE</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/robot salvaje.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>ROBOT SALVAJE</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="romantica">
+            <img src="../imagenes/romper el circulo.png" alt="Póster de Película 1">
+            <div>
+                <h2>ROMPER EL CIRCULO</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/the pianist.png" alt="Póster de Película 1">
+            <div>
+                <h2>EL PIANISTA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="drama">
+            <img src="../imagenes/twister.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>TWISTERS</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/venom.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>VENOM</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Infantil">
+            <img src="../imagenes/10 vidas.png" alt="Póster de Película 1">
+            <div>
+                <h2>10 VIDAS</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+        <div class="movie" data-genre="accion">
+            <img src="../imagenes/14.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>MAD MAX</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="romantica">
+            <img src="../imagenes/yo antes de ti.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>YO ANTES DE TI</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="romantica">
+            <img src="../imagenes/con todos menos contigo.jfif" alt="Póster de Película 1">
+            <div>
+                <h2>CON TODOS MENOS CONTIGO</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="romantica">
+            <img src="../imagenes/beautiful.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>BEAUTIFUL WEDDING</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="romantica">
+            <img src="../imagenes/la idea de ti.png" alt="Póster de Película 1">
+            <div>
+                <h2>LA IDEA DE TI</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Ficcion">
+            <img src="../imagenes/la sustancia.jfif" alt="Póster de Película 1">
+            <div>
+                <h2>LA SUSTANCIA</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+        <div class="movie" data-genre="Ficcion">
+            <img src="../imagenes/smile.jpg" alt="Póster de Película 1">
+            <div>
+                <h2>SMILE</h2>
+                <a href="#" class="ver">Ver más</a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="important-info">
+          <h2>Información importante</h2>
+          <p>Recuerda que el horario mostrado corresponde a la hora del inicio de la publicidad. El horario de apertura del cine es 20 minutos antes de la primera función programada.</p>
+        </div>
+        
+        <div class="footer-columns">
+          <div class="footer-section">
+            <h2>Nosotros</h2>
+            <ul>
+              <li>Conócenos</li>
+              <li>Trabaja con nosotros</li>
+              <li>Ventas Corporativas</li>
+              <li>Memoria de Gestión de Sostenibilidad 2023</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h2>Atención al cliente</h2>
+            <ul>
+              <li>Ver mi boleta electrónica</li>
+              <li>Ver lista de productos permitidos</li>
+              <li>Atención de Consultas o Incidencias</li>
+              <li>Contáctanos</li>
+            </ul>
+          </div>
+          
+          <div class="footer-section">
+            <h2>Políticas y condiciones</h2>
+            <ul>
+              <li>Política de SST</li>
+              <li>Política de Sostenibilidad</li>
+              <li>Política de Diversidad e Inclusión</li>
+              <li>Política de Privacidad</li>
+              <li>Condiciones de uso y seguridad</li>
+              <li>Reglas de Convivencia</li>
+              <li>Términos y condiciones</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+  
+          <div class="footer-black">
+            <p>Síguenos en:</p>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+      </footer>  
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cines - Tu Red de Cines Favoritos</title>
+    <link rel="stylesheet" href="../css/estilosKevin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">Cineplanet</h2>
+            <nav>
+                <a href="indexCortez.html">Inicio</a>
+                <a href="indexVanesa.html">Peliculas</a>
+                <a href="#" class="activo">Cines</a>
+                <a href="indexYadhi.html">Promociones</a>
+                <a href="indexLogin.html">Iniciar Sesion</a>
+            </nav>
+        </div>
+    </header>
+    <header>
+        <div class="navbar">
+            <h1>Cines</h1>
+        </div>
+    </header>
+
+    <section id="filters">
+        <div class="filter">
+            <label for="ciudad">Por Ciudad</label>
+            <select id="ciudad">
+                <option value="todas">Todas las ciudades</option>
+                <option value="lima">Lima</option>
+                <option value="arequipa">Arequipa</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Chiclayo">Chiclayo</option>
+                <option value="cusco">Cusco</option>
+                <option value="Huancayo">Huancayo</option>
+                <option value="Huanuco">Huanuco</option>
+                <option value="Juliaca">Juliaca</option>
+                <option value="Piura">Piura</option>
+                <option value="Pucallpa">Pucallpa</option>
+                <option value="Puno">Puno</option>
+                <option value="Tacna">Tacna</option>
+                <option value="Trujillo">Trujillo</option>
+            </select>
+        </div>
+
+        <div class="filter">
+            <label for="formato">Por Formato</label>
+            <select id="formato">
+                <option value="todos">Todos los formatos</option>
+                <option value="2D">2D</option>
+                <option value="3D">3D</option>
+                <option value="Prime">Prime</option>
+                <option value="Regular">Regular</option>
+                <option value="Screenx">Screenx</option>
+                <option value="Xtreme">Xtreme</option>
+            </select>
+        </div>
+    </section>
+
+    <section id="cines">
+        <div class="cine">
+            <img src="../IMGKevin/CP_Norte.jpg" alt="CP Norte" width="200" height="150">
+            <h2>CP Norte</h2>
+            <p>Av. Carlos Izaguirre Cdra 5</p>
+            <p>2D, REGULAR, 3D, XTREME</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_Piura_Centro.jpg" alt="CP Piura" width="200" height="150">
+            <h2>CP Piura</h2>
+            <p>Jr. Huancavelica 537 - Piura</p>
+            <p>2D, REGULAR</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_Lurin.jpg" alt="CP Lurin" width="200" height="150">
+            <h2>CP Lurin</h2>
+            <p>S/N San Pedro Parcela B-43</p>
+            <p>2D, REGULAR</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_Mall_Del_Sur.jpg" alt="CP Mall del Sur" width="200" height="150">
+            <h2>CP Mall del Sur</h2>
+            <p>Carr. Atocongo Lote 1 Mall del</p>
+            <p>2D, 3D, REGULAR, SCREENX, XTREME</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_Juliaca_Real_Plaza.jpg" alt="CP Juliaca" width="200" height="150">
+            <h2>CP Juliaca</h2>
+            <p>Calle Tumbes 395 - San Roman</p>
+            <p>2D, REGULAR, 3D</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_La_Molina.jpg" alt="CP La Molina" width="200" height="150">
+            <h2>CP La Molina</h2>
+            <p>Av. Raúl Ferrero 1205 3er P</p>
+            <p>2D, REGULAR, 3D</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_Huancayo_Real_Plaza.jpg" alt="CP Huancayo Real Plaza" width="200" height="150">
+            <h2>CP Huancayo Real Plaza</h2>
+            <p>Av. Ferrocarril Cuadra 8 S/N</p>
+            <p>2D, REGULAR</p>
+        </div>
+
+        <div class="cine">
+            <img src="../IMGKevin/CP_Huanuco_Real_Plaza.jpg" alt="CP Huanuco Real Plaza" width="200" height="150">
+            <h2>CP Huanuco Real Plaza</h2>
+            <p>Jr. Independencia s/n</p>
+            <p>2D, 3D, REGULAR</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="important-info">
+            <h2>Información importante</h2>
+            <p>Recuerda que el horario mostrado corresponde a la hora del inicio de la publicidad. El horario de apertura del cine es 20 minutos antes de la primera función programada.</p>
+        </div>
+        <div class="footer-columns">
+            <div class="footer-section">
+                <h2>Nosotros</h2>
+                <ul>
+                    <p>Conócenos</p>
+                    <p>Trabaja con nosotros</p>
+                    <p>Ventas Corporativas</p>
+                    <p>Memoria de Gestión de Sostenibilidad 2023</p>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Atención al cliente</h2>
+                <ul>
+                    <p>Ver mi boleta electrónica</p>
+                    <p>Ver lista de productos permitidos</p>
+                    <p>Atención de Consultas o Incidencias</p>
+                    <p>Contáctanos</p>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Políticas y condiciones</h2>
+                <ul>
+                    <p>Política de SST</p>
+                    <p>Política de Sostenibilidad</p>
+                    <p>Política de Diversidad e Inclusión</p>
+                    <p>Política de Privacidad</p>
+                    <p>Condiciones de uso y seguridad</p>
+                    <p>Reglas de Convivencia</p>
+                    <p>Términos y condiciones</p>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <div class="footer-black">
+              <p>Síguenos en:</p>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+            <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+</body>
+</html>
