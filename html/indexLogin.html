@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styleLogin.css">
+    <script type="text/javascript" src="../carpetjs/jsCortez.js"></script>
 </head>
 
 <body>
     <div class="formulario">
         <h1>Inicio de sesion</h1>
-        <form method="post">
+        <form method="post" name="formulario1">
             <div class="username">
-                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="text" name="usuario" value="" placeholder="Nombre de usuario" required>
                 
             </div>
             <div class="username">
-                <input type="password" placeholder="contraseña" required>
+                <input type="password" name="password" value="" placeholder="contraseña" required>
                 
             </div>
            
-            <input type="submit" value="Iniciar sesion">
+            <input type="button" value="Iniciar sesion" onclick="comprobar_usuarios()">
             <div class="registrarse">
                 <a href="#">Registrarse</a>
             </div>

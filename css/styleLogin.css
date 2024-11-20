@@ -71,7 +71,7 @@ form .username{
 .recordar:hover{
     text-decoration: underline;
 }
-input[type="submit"]{
+input[type="button"]{
     width: 100%;
     height: 50px;
     border: 1px solid;
@@ -83,7 +83,7 @@ input[type="submit"]{
     outline: none;
 }
 
-input[type="submit"]{
+input[type="button"]{
 border-color: #E50914;
 transition: .5s;
 }
