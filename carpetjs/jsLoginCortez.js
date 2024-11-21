@@ -36,7 +36,7 @@ function comprobar_usuarios() {
             break;
 
             case 'Kevin':
-            if (pass = 'kevin123') {
+            if (pass === 'kevin123') {
                 alert('Bienvenido a cineplanet ' + usu + " , espero que estes muy bien ");
                 location = 'indexCortez.html';
             }else{

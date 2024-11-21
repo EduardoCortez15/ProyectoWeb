@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
+    <script type="text/javascript" src="../carpetjs/jsIndexCortez.js"></script>
     <title>Pagina Principal</title>
 </head>
 
-<body>
+<body >
     <header>
         <div class="contenedor">
             <h2 class="logotipo">Cineplanet</h2>
@@ -34,7 +35,13 @@
                 <p class="descripcion">
                     Estas listo para vivir la más grande experiencia y disfrutar los mejores beneficios?  Cineplanet es el lugar que esperabas , unete a la mejor compañia de cines.
                 </p>
-                <button role="button" class="boton"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
+                <button role="button" class="boton" onclick="ventana_emergente()">
+                    <i class="fa-solid fa-cart-shopping"></i> Comprar peliculas
+                </button>
+                <button role="button" class="boton" onclick="ventana_emergente2()">
+                    <i class="fa-solid fa-cart-shopping"></i> Data base peliculas
+                </button>
+                
 
             </div>
         </div>
@@ -46,8 +53,6 @@
                 </div>
             </div>
             <div class="contenedor-principal">
-                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i
-                        class="fa-solid fa-angle-left"></i></button>
 
                 <div class="contenedor-carousel">
                     <div class="carousel">
@@ -199,8 +204,7 @@
                     </div>
                     </div>
 
-                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i
-                            class="fa-solid fa-angle-right"></i></button>
+                    
                 </div>
             </div>
     </main>
